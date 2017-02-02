@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: RandGen
+  host: RandGen
+  disk_quota: 1024M
+  services:
+  - RandGen-cloudantNoSQLDB
+  - RandGen-iotf-service
